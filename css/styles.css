@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container {
+  width: 375px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+header .number-of-notifications {
+  width: 25px;
+  height: 20px;
+  margin-top: 4px;
+  margin-left: 10px;
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .mark {
+  font-size: 1.3rem;
+  margin-left: 75px;
+  margin-top: 5px;
+  color: hsl(219, 12%, 42%);
+}
+
+.notification-containers .post {
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: hsl(211, 68%, 94%);
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: row;
+}
+.notification-containers .post img {
+  width: 40px;
+  height: 40px;
+}
+.notification-containers .post .info {
+  margin-left: 10px;
+}
+.notification-containers .post .info .message {
+  color: hsl(219, 12%, 42%);
+}
+.notification-containers .post .info span:first-of-type {
+  color: black;
+  font-weight: bold;
+  margin-right: 3px;
+}
+.notification-containers .post .info span:last-of-type {
+  font-weight: bold;
+}
+.notification-containers .post .info .time {
+  color: hsl(219, 14%, 63%);
+}
+.notification-containers .post:nth-child(3) span:last-of-type {
+  color: hsl(219, 85%, 26%);
+}
+.notification-containers .post:nth-child(4) {
+  background-color: hsl(0, 0%, 100%);
+}
+.notification-containers .post:nth-child(4) .private-message {
+  margin-top: 10px;
+  border: 1px solid hsl(219, 14%, 63%);
+  border-radius: 5px;
+  padding: 15px;
+  color: hsl(219, 12%, 42%);
+}
+.notification-containers .post:nth-child(5) {
+  background-color: hsl(0, 0%, 100%);
+}
+.notification-containers .post:nth-child(6) {
+  background-color: hsl(0, 0%, 100%);
+}
+.notification-containers .post:nth-child(7) {
+  background-color: hsl(0, 0%, 100%);
+}
+.notification-containers .post:nth-child(7) span:last-of-type {
+  color: hsl(219, 85%, 26%);
+}/*# sourceMappingURL=styles.css.map */

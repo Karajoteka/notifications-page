@@ -1,0 +1,137 @@
+$font-stack: 'Plus Jakarta Sans', sans-serif;
+$red: hsl(1, 90%, 64%);
+$blue: hsl(219, 85%, 26%);
+$white: hsl(0, 0%, 100%);
+$very-light-grayish-blue: hsl(210, 60%, 98%);
+$light-grayish-blue1: hsl(211, 68%, 94%);
+$light-grayish-blue2: hsl(205, 33%, 90%);
+$grayish-blue: hsl(219, 14%, 63%);
+$dark-grayish-blue: hsl(219, 12%, 42%);
+$very-dark-blue: hsl(224, 21%, 14%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-stack;
+}
+
+.container {
+  width: 375px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+
+  .number-of-notifications {
+    width: 25px;
+    height: 20px;
+    margin-top: 4px;
+    margin-left: 10px;
+    background-color: $blue;
+    color: $white;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mark {
+    font-size: 1.3rem;
+    margin-left: 75px;
+    margin-top: 5px;
+    color: $dark-grayish-blue;
+  }
+}
+
+.notification-containers {
+
+  .post {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: $light-grayish-blue1;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: row;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .info {
+      margin-left: 10px;
+
+      .message {
+        color: $dark-grayish-blue;
+      }
+
+      span:first-of-type {
+        color: black;
+        font-weight: bold;
+        margin-right: 3px;
+      }
+
+      span:last-of-type {
+        font-weight: bold;
+      }
+
+      .time {
+        color: $grayish-blue;
+      }
+    }
+  }
+  .post:nth-child(3) {
+    span:last-of-type {
+      color: $blue;
+    }
+  }
+  .post:nth-child(4) {
+    background-color: $white;
+    .private-message {
+      margin-top: 10px;
+      border: 1px solid $grayish-blue;
+      border-radius: 5px;
+      padding: 15px;
+      color: $dark-grayish-blue;
+    }
+  }
+  .post:nth-child(5) {
+    background-color: $white;
+  }
+  .post:nth-child(6) {
+    background-color: $white;
+  }
+  .post:nth-child(7) {
+    background-color: $white;
+    span:last-of-type {
+      color: $blue;
+    }
+  }
+}
+
+
+
+
+// .red-point {
+//   width: 10px;
+//   height: 10px;
+//   background-color: red;
+// }
