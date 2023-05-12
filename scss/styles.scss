@@ -173,5 +173,22 @@ header {
 }
 
 
+@media screen and (min-width: 768px) {
+  body {
+    background-color: $very-light-grayish-blue;
+  }
+  
+  .container {
+    width: 600px;
+    margin: 40px 0 40px 0;
+    padding: 25px;
+    background-color: $white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px $light-grayish-blue2;
+  }
+}
+
+
+
 
 

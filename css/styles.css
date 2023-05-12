@@ -137,4 +137,18 @@ header .mark:hover {
 }
 .notification-containers .post:nth-child(7) span:last-of-type {
   color: hsl(219, 85%, 26%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: hsl(210, 60%, 98%);
+  }
+  .container {
+    width: 600px;
+    margin: 40px 0 40px 0;
+    padding: 25px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px hsl(205, 33%, 90%);
+  }
 }/*# sourceMappingURL=styles.css.map */
