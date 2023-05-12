@@ -24,7 +24,12 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+header .notifications {
+  display: flex;
+  flex-direction: row;
 }
 header .number-of-notifications {
   width: 25px;
@@ -42,9 +47,10 @@ header .number-of-notifications {
 }
 header .mark {
   font-size: 1.3rem;
-  margin-left: 75px;
   margin-top: 5px;
   color: hsl(219, 12%, 42%);
+  display: flex;
+  justify-items: flex-end;
 }
 
 .notification-containers .post {

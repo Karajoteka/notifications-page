@@ -35,28 +35,35 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 20px;
 
-  .number-of-notifications {
-    width: 25px;
-    height: 20px;
-    margin-top: 4px;
-    margin-left: 10px;
-    background-color: $blue;
-    color: $white;
-    border-radius: 5px;
-    font-size: 1.5rem;
-    font-weight: bold;
+  .notifications {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;    
   }
+
+    .number-of-notifications {
+      width: 25px;
+      height: 20px;
+      margin-top: 4px;
+      margin-left: 10px;
+      background-color: $blue;
+      color: $white;
+      border-radius: 5px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
   .mark {
     font-size: 1.3rem;
-    margin-left: 75px;
     margin-top: 5px;
     color: $dark-grayish-blue;
+    display: flex;
+    justify-items: flex-end;
   }
 }
 
