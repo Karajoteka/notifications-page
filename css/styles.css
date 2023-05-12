@@ -70,7 +70,9 @@ header .mark {
   margin-left: 10px;
 }
 .notification-containers .post .info .message {
+  position: relative;
   color: hsl(219, 12%, 42%);
+  display: inline;
 }
 .notification-containers .post .info span:first-of-type {
   color: black;
@@ -79,6 +81,15 @@ header .mark {
 }
 .notification-containers .post .info span:last-of-type {
   font-weight: bold;
+}
+.notification-containers .post .info .red-point {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  background-color: hsl(1, 90%, 64%);
+  border-radius: 100%;
+  margin-left: 5px;
 }
 .notification-containers .post .info .time {
   color: hsl(219, 14%, 63%);

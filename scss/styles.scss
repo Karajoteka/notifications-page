@@ -87,7 +87,9 @@ header {
       margin-left: 10px;
 
       .message {
+        position: relative;
         color: $dark-grayish-blue;
+        display: inline;
       }
 
       span:first-of-type {
@@ -98,6 +100,16 @@ header {
 
       span:last-of-type {
         font-weight: bold;
+      }
+
+      .red-point {
+        display: inline-block;
+        vertical-align: middle;
+        width: 8px;
+        height: 8px;
+        background-color: $red;
+        border-radius: 100%;
+        margin-left: 5px;
       }
 
       .time {
@@ -137,8 +149,3 @@ header {
 
 
 
-// .red-point {
-//   width: 10px;
-//   height: 10px;
-//   background-color: red;
-// }
