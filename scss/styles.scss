@@ -64,6 +64,10 @@ header {
     color: $dark-grayish-blue;
     display: flex;
     justify-items: flex-end;
+    &:hover {
+      cursor: pointer;
+      color: $blue;
+    }
   }
 }
 
@@ -96,10 +100,18 @@ header {
         color: black;
         font-weight: bold;
         margin-right: 3px;
+        &:hover {
+          cursor: pointer;
+          color: $blue;
+        }
       }
 
       span:last-of-type {
         font-weight: bold;
+        &:hover {
+          cursor: pointer;
+          color: $blue;
+        }
       }
 
       .red-point {
@@ -118,28 +130,42 @@ header {
     }
   }
   .post:nth-child(3) {
+
     span:last-of-type {
       color: $blue;
     }
   }
   .post:nth-child(4) {
     background-color: $white;
+
     .private-message {
       margin-top: 10px;
       border: 1px solid $grayish-blue;
       border-radius: 5px;
       padding: 15px;
       color: $dark-grayish-blue;
+      &:hover {
+        cursor: pointer;
+        background-color: $light-grayish-blue2;
+      }
     }
   }
+
   .post:nth-child(5) {
     background-color: $white;
+
+    .photo:hover {
+      cursor: pointer;
+    }
   }
+
   .post:nth-child(6) {
     background-color: $white;
   }
+
   .post:nth-child(7) {
     background-color: $white;
+
     span:last-of-type {
       color: $blue;
     }

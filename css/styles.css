@@ -52,6 +52,10 @@ header .mark {
   display: flex;
   justify-items: flex-end;
 }
+header .mark:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
 
 .notification-containers .post {
   padding: 15px;
@@ -79,8 +83,16 @@ header .mark {
   font-weight: bold;
   margin-right: 3px;
 }
+.notification-containers .post .info span:first-of-type:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
+}
 .notification-containers .post .info span:last-of-type {
   font-weight: bold;
+}
+.notification-containers .post .info span:last-of-type:hover {
+  cursor: pointer;
+  color: hsl(219, 85%, 26%);
 }
 .notification-containers .post .info .red-point {
   display: inline-block;
@@ -107,8 +119,15 @@ header .mark {
   padding: 15px;
   color: hsl(219, 12%, 42%);
 }
+.notification-containers .post:nth-child(4) .private-message:hover {
+  cursor: pointer;
+  background-color: hsl(205, 33%, 90%);
+}
 .notification-containers .post:nth-child(5) {
   background-color: hsl(0, 0%, 100%);
+}
+.notification-containers .post:nth-child(5) .photo:hover {
+  cursor: pointer;
 }
 .notification-containers .post:nth-child(6) {
   background-color: hsl(0, 0%, 100%);
